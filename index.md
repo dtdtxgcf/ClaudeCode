@@ -12,6 +12,7 @@ date: 2026-03-22
 - [[2026-03-22-OpenClaw全面解析]] — OpenClaw 开源本地优先 AI Agent 平台全面解析：功能、架构、安装与安全风险 `#AI-Agent` `#OpenClaw` `#开源` `#本地部署`
 - [[2026-03-22-Claude-Code榜一大哥刘小排]] — Claude Code 全球 token 消耗榜一用户刘小排的 AI 创业实战与工具使用心得 `#Claude-Code` `#AI创业` `#播客` `#Agent`
 - [[2026-03-22-Claude-HUD状态栏插件]] — Claude Code 实时状态栏插件，显示 context 用量、工具活动、Agent 状态，10.9k stars `#Claude-Code` `#效率工具` `#插件`
+- [[2026-03-22-OpenClaw-Workspace配置最佳实践]] — OpenClaw 六大核心文件（IDENTITY/SOUL/AGENTS/TOOLS/HEARTBEAT/USER）配置指南与社区模板 `#OpenClaw` `#AI-Agent` `#Workspace配置` `#提示工程`
 
 ## 设计
 
