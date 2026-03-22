@@ -42,40 +42,7 @@ git clone https://github.com/dtdtxgcf/ClaudeCode.git ~/ClaudeCode
 
 ### 2. 安装自动同步
 
-#### 方案一：实时同步（推荐）
-
-基于 GitHub Webhook + ntfy.sh，push 后秒级同步到 Mac。
-
-```bash
-cd ~/ClaudeCode
-bash .infra/scripts/install-realtime-sync.sh
-```
-
-安装后按提示配置 GitHub Webhook：
-1. 打开 `https://github.com/dtdtxgcf/ClaudeCode/settings/hooks`
-2. Add webhook：
-   - **Payload URL**：`https://ntfy.sh/<脚本输出的频道名>`
-   - **Content type**：`application/json`
-   - **Events**：Just the push event
-3. 保存
-
-常用命令：
-```bash
-# 查看实时同步日志
-tail -f ~/ClaudeCode/.infra/scripts/.realtime-sync-stdout.log
-
-# 查看同步记录
-cat ~/ClaudeCode/.infra/scripts/.sync.log
-
-# 停止/启动/卸载
-launchctl unload ~/Library/LaunchAgents/com.claudecode.realtime-sync.plist
-launchctl load ~/Library/LaunchAgents/com.claudecode.realtime-sync.plist
-launchctl unload ~/Library/LaunchAgents/com.claudecode.realtime-sync.plist && rm ~/Library/LaunchAgents/com.claudecode.realtime-sync.plist
-```
-
-#### 方案二：定时轮询（兜底）
-
-每 5 分钟自动 pull，可与实时同步共存作为兜底。
+每 30 秒自动 pull，零依赖、零配置。
 
 ```bash
 cd ~/ClaudeCode
@@ -93,7 +60,7 @@ launchctl load ~/Library/LaunchAgents/com.claudecode.autosync.plist
 launchctl unload ~/Library/LaunchAgents/com.claudecode.autosync.plist && rm ~/Library/LaunchAgents/com.claudecode.autosync.plist
 ```
 
-> **迁移提示**：如果之前已安装旧版轮询同步，请重新运行 `bash .infra/scripts/install-auto-sync.sh` 更新脚本路径。
+> **迁移提示**：如果之前已安装旧版（5分钟轮询），请重新运行安装脚本更新配置。
 
 ### 3. 用 Obsidian 打开
 

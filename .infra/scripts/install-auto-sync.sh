@@ -23,7 +23,7 @@ fi
 # 2. 给同步脚本执行权限
 chmod +x "$SYNC_SCRIPT"
 
-# 3. 创建 launchd plist（每 5 分钟同步一次）
+# 3. 创建 launchd plist（每 30 秒同步一次）
 cat > "$PLIST_PATH" << EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
@@ -38,7 +38,7 @@ cat > "$PLIST_PATH" << EOF
         <string>${SYNC_SCRIPT}</string>
     </array>
     <key>StartInterval</key>
-    <integer>300</integer>
+    <integer>30</integer>
     <key>RunAtLoad</key>
     <true/>
     <key>StandardOutPath</key>
@@ -54,7 +54,7 @@ launchctl unload "$PLIST_PATH" 2>/dev/null
 launchctl load "$PLIST_PATH"
 
 echo "✅ 自动同步已安装！"
-echo "   同步频率：每 5 分钟"
+echo "   同步频率：每 30 秒"
 echo "   仓库路径：$REPO_DIR"
 echo ""
 echo "常用命令："
