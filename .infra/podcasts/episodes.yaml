@@ -1,4 +1,12 @@
 # 已扫描的播客单集记录
 # 定时任务每次运行后自动更新此文件
 
-episodes: []
+episodes:
+  - podcast: 晚点聊 LateTalk
+    episode: "151"
+    title: "访谈 MuleRun 陈宇森：Claude Code 带来 Agent 创作新范式、未来的软件是日抛式的"
+    date: 2026-03-22
+    score: 8.6
+    status: archived
+    note: knowledge/tech/2026-03-22-晚点聊EP151-MuleRun陈宇森谈Agent创作新范式.md
+    transcript: false
