@@ -30,6 +30,16 @@ _暂无条目_
 
 _暂无条目_
 
+## 投资研究
+
+> 仪表盘：`research-db/Dashboard.md`｜公司模板：`.infra/templates/company-template.md`｜赛道模板：`.infra/templates/segment-template.md`
+
+### 赛道
+_暂无条目_
+
+### 公司
+_暂无条目_
+
 ## 笔记
 
 _暂无条目_
