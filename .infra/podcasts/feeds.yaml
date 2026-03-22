@@ -1,0 +1,186 @@
+# AI 播客订阅清单
+# 由 Claude Code 维护，定时任务扫描时读取此文件
+# format: interview / solo / panel / narrative
+
+feeds:
+  # ========== 中文播客 ==========
+
+  - id: crossing
+    name: 十字路口 Crossing
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/6538c5e0ac579f5b22548ace
+    lang: zh
+    focus: [AI创业, AI投资]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 真格基金 Koji + 前硅谷记者 Ronghui，专访 AI 时代积极行动者
+
+  - id: guigu101
+    name: 硅谷101
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/5e5c52c9418a84a04625e6cc
+    lang: zh
+    focus: [AI技术, 硅谷创业]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 泓君主持，深度访谈科技行业一线人物，中美科技视角
+
+  - id: zhangxiaojun
+    name: 张小珺 商业访谈录
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/626b46ea9cbbf0451cf5a962
+    lang: zh
+    focus: [AI创业, AI大模型, 风险投资]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 顶级创始人访谈（智谱CEO、Manus创始人等），腾讯新闻首发
+
+  - id: onboard
+    name: OnBoard!
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/620533c5ab25b1e1170a853b
+    lang: zh
+    focus: [AI创业, AI产品, AI出海]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 两位投资人主持，关注 AI 产品落地和出海增长
+
+  - id: latetalk
+    name: 晚点聊 LateTalk
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/61933ace1b4320461e91fd55
+    lang: zh
+    focus: [AI大模型, AI创业, 科技商业]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 晚点LatePost出品，一手科技访谈，采访AI核心人物
+
+  - id: 42jingji
+    name: 42章经
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/648b0b641c48983391a63f98
+    lang: zh
+    focus: [AI投资, AI创业, AI产品]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 曲凯主持，AI 领域一线创业者和投资人深度访谈
+
+  - id: agi-insider
+    name: AI局内人
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/643928f99361a4e7c38a9555
+    lang: zh
+    focus: [AI技术, AGI, AI商业模式]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 极客公园 FounderPark 出品，AGI 领域技术与商业探讨
+
+  - id: startup-insider
+    name: 创业内幕 Startup Insider
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/5e7cccf8418a84a046c4e7f9
+    lang: zh
+    focus: [AI创业, AI应用, 创业投资]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 纪源资本出品，AI 创业者访谈
+
+  - id: whatsnext
+    name: What's Next 科技早知道
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/5e4ee557418a84a046e2d8c4
+    lang: zh
+    focus: [AI技术, 全球科技趋势]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 声动活泼出品，中美科技前沿动态
+
+  # ========== 英文播客 ==========
+
+  - id: lex-fridman
+    name: Lex Fridman Podcast
+    platform: youtube
+    url: https://www.youtube.com/lexfridman
+    rss: https://lexfridman.com/feed/podcast/
+    lang: en
+    focus: [AI技术前沿, AI创业]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 长对话（2-6h），AI 先驱深度访谈，Elon Musk/Sam Altman/Karpathy 等
+
+  - id: dwarkesh
+    name: Dwarkesh Podcast
+    platform: youtube
+    url: https://www.youtube.com/@DwarkeshPatel
+    lang: en
+    focus: [AI技术前沿, AGI, Scaling Laws]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 深度研究型访谈，Ilya Sutskever/Zuckerberg/Dario Amodei 等
+
+  - id: no-priors
+    name: No Priors
+    platform: youtube
+    url: https://www.youtube.com/@NoPriorsPodcast
+    lang: en
+    focus: [AI投资, AI创业, AI技术前沿]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: Sarah Guo (Conviction VC) + Elad Gil，顶级 AI 投资人视角
+
+  - id: latent-space
+    name: Latent Space
+    platform: youtube
+    url: https://www.youtube.com/@LatentSpaceTV
+    rss: https://api.substack.com/feed/podcast/1084089.rss
+    lang: en
+    focus: [AI工程, AI Agent, 基础模型]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: AI 工程师社区播客，技术深度最强，OpenAI/Anthropic/Meta 等
+
+  - id: all-in
+    name: All-In Podcast
+    platform: youtube
+    url: https://www.youtube.com/@allin
+    lang: en
+    focus: [AI投资, 科技市场, 公共政策]
+    format: panel
+    added: 2026-03-22
+    active: true
+    note: 四位硅谷顶级投资人圆桌，AI 投资与市场趋势
+
+  - id: gradient-dissent
+    name: Gradient Dissent
+    platform: youtube
+    url: https://www.youtube.com/@GradientDissent
+    lang: en
+    focus: [AI工程, AI基础设施, 应用AI]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: Weights & Biases CEO 主持，AI 实践者对话
+
+  - id: cognitive-revolution
+    name: The Cognitive Revolution
+    platform: youtube
+    url: https://www.youtube.com/@CognitiveRevolutionPodcast
+    lang: en
+    focus: [AI技术前沿, AI创业, AI安全]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: Nathan Labenz 主持，AI 前沿研究与应用深度访谈

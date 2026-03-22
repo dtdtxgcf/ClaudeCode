@@ -24,6 +24,12 @@ _暂无条目_
 
 _暂无条目_
 
+## 播客
+
+> 评分标准：`.infra/podcasts/scoring-guide.md`｜日报：`notes/podcasts/`
+
+_暂无条目_
+
 ## 笔记
 
 _暂无条目_

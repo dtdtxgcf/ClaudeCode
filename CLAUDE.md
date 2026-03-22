@@ -91,6 +91,32 @@ tags:
 - [标题](knowledge/分类/文件名.md) — 简短描述 `#标签`
 ```
 
+## 播客知识采集系统
+
+### 订阅管理
+- 订阅清单：`.infra/podcasts/feeds.yaml`
+- 已扫描记录：`.infra/podcasts/episodes.yaml`
+- 评分标准：`.infra/podcasts/scoring-guide.md`
+
+### 评分规则
+- 5 维度评分：嘉宾分量(30%) + 相关度(25%) + 信息密度(20%) + 时效性(15%) + 形式加分(10%)
+- 9.0+ 分自动归档到 knowledge/ 目录
+- 7.0-8.9 分推荐到日报
+- 7.0 以下记录但不推荐
+
+### 播客归档工作流
+1. 搜索文字版（WebSearch）
+2. 抓取全文（WebFetch），搜不到则标记 `transcript: false`
+3. 按 `.infra/templates/podcast-template.md` 模板生成笔记
+4. 存入对应分类目录（tech/business/other）
+5. 更新 index.md 和 episodes.yaml
+6. 检查已有笔记建立 [[双链]]
+
+### 每日推荐
+- 每日推荐报告存入 `notes/podcasts/YYYY-MM-DD-播客日报.md`
+- 用户随时可以说「今天有什么好播客」触发手动扫描
+- 手动扫描流程与定时任务相同
+
 ## 方案先行
 
 在执行任何操作之前，先描述你的方案并等待用户批准。如果需求不明确，先提出澄清问题。对于涉及多个文件的任务，先拆分为小步骤再逐个执行。
@@ -108,3 +134,6 @@ tags:
 - 用中文撰写笔记内容（除非原文是英文且用户未要求翻译）
 - 文件名和标题尽可能使用中文（专有名词如 OpenClaw、Claude Code 等保留英文）
 - 基础设施文件（脚本、文档、模板）放在 `.infra/` 目录，不要污染知识库根目录
+- 播客笔记使用 `.infra/templates/podcast-template.md` 模板，type 字段设为 podcast
+- 每日播客日报文件名格式：`YYYY-MM-DD-播客日报.md`
+- 播客评分必须给出 5 个维度的分数明细
