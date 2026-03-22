@@ -90,6 +90,7 @@ MuleRun 创始人陈宇森（前长亭科技创始人，22 岁浙大毕业创业
 - [[2026-03-22-Claude-Code榜一大哥刘小排]] — 同为 Claude Code 生态的创业实战
 - [[2026-03-22-Claude-Code配置技巧]] — Claude Code 使用技巧
 - [[2026-03-22-OpenClaw全面解析]] — 另一个 AI Agent 平台
+- [[2026-03-22-42章经-OpenClaw之后只想未来3到6个月]] — 同期 Agent 深度对谈，OpenClaw + Coding Agent 趋势
 
 ## 评分明细
 

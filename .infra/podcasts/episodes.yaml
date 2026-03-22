@@ -10,3 +10,11 @@ episodes:
     status: archived
     note: knowledge/tech/2026-03-22-晚点聊EP151-MuleRun陈宇森谈Agent创作新范式.md
     transcript: false
+  - podcast: 42章经
+    episode: "OpenClaw 之后，我只想未来 3-6 个月的事情"
+    title: "OpenClaw 之后，我只想未来 3-6 个月的事情｜对谈 Sheet0 创始人王文锋"
+    date: 2026-03-22
+    score: 9.2
+    status: archived
+    note: knowledge/tech/2026-03-22-42章经-OpenClaw之后只想未来3到6个月.md
+    transcript: true
