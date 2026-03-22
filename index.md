@@ -7,7 +7,7 @@ date: 2026-03-22
 
 ## 技术 (Tech)
 
-_暂无条目_
+- [[2026-03-22-ghostty-terminal-claude-code-workflow]] — Claude Code 团队推荐的终端 Ghostty，含 Boris 工作流建议 `#终端` `#Ghostty` `#Claude-Code` `#效率工具`
 
 ## 设计 (Design)
 
