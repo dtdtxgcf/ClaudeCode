@@ -17,9 +17,9 @@
 
 ## 文件命名规范
 
-`YYYY-MM-DD-简短英文标题.md`
+`YYYY-MM-DD-简短中文标题.md`
 
-示例：`2026-03-22-rag-architecture-patterns.md`
+示例：`2026-03-22-RAG架构模式.md`
 
 ## 分类规则
 
@@ -98,3 +98,4 @@ tags:
 - 内部链接使用 `[[文件名]]` 格式（不含路径前缀，Obsidian 会自动解析）
 - commit 信息格式：`knowledge: add 简短描述`
 - 用中文撰写笔记内容（除非原文是英文且用户未要求翻译）
+- 文件名和标题尽可能使用中文（专有名词如 OpenClaw、Claude Code 等保留英文）

@@ -92,7 +92,7 @@ Ghostty 是 Mitchell Hashimoto（Vagrant、Terraform、HashiCorp 创始人）从
 
 ## 相关笔记
 
-- [[2026-03-22-claude-code-claude-md-tips]]
+- [[2026-03-22-Claude-Code配置技巧]]
 
 ## 原始信息
 

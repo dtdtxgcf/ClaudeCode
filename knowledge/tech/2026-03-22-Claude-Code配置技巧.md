@@ -78,7 +78,7 @@ Santiago 后续在 Sonar Summit 演讲中扩展为 18 条建议，额外包括�
 
 ## 相关笔记
 
-- [[2026-03-22-ghostty-terminal-claude-code-workflow]]
+- [[2026-03-22-Ghostty终端与Claude-Code工作流]]
 
 ## 原始信息
 
