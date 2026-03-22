@@ -18,3 +18,11 @@ episodes:
     status: archived
     note: knowledge/tech/2026-03-22-42章经-OpenClaw之后只想未来3到6个月.md
     transcript: true
+  - podcast: 42章经
+    episode: "Agent 开发的上半场: 环境、Tools 和 Context 如何决定 Agent"
+    title: "Agent 开发的上半场: 环境、Tools 和 Context 如何决定 Agent"
+    date: 2025-04-27
+    score: 7.9
+    status: archived
+    note: knowledge/tech/2025-04-27-42章经-Agent开发上半场环境Tools与Context.md
+    transcript: true

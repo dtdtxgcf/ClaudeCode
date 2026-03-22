@@ -30,7 +30,8 @@ _暂无条目_
 > 评分标准：`.infra/podcasts/scoring-guide.md`｜日报：`notes/podcasts/`
 
 - [[2026-03-22-晚点聊EP151-MuleRun陈宇森谈Agent创作新范式]] — MuleRun 陈宇森谈 Claude Code 带来 Agent 创作新范式、日抛式软件 `#播客` `#AI-Agent` `#Claude-Code` `#MuleRun` ⭐8.6
-- [[2026-03-22-42章经-OpenClaw之后只想未来3到6个月]] — Sheet0 王文锋深度对谈：所有 Agent 都是 Coding Agent、SaaS 颠覆、Agent Harness `#播客` `#AI-Agent` `#OpenClaw` `#Coding-Agent` ⭐9.2
+- [[2025-04-27-42章经-Agent开发上半场环境Tools与Context]] — Sheet0 王文锋系统梳理 Agent 框架：RL 三要素、Context 工程、Tool Use 对比、AI Coding 是灵巧手 `#播客` `#AI-Agent` `#MCP` `#Context工程` ⭐7.9
+- [[2026-03-22-42章经-OpenClaw之后只想未来3到6个月]] — **续集** Sheet0 王文锋：所有 Agent 都是 Coding Agent、SaaS 颠覆、Agent Harness `#播客` `#AI-Agent` `#OpenClaw` `#Coding-Agent` ⭐9.2
 
 ## 投资研究
 
