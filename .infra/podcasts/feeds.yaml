@@ -104,6 +104,94 @@ feeds:
     active: true
     note: 声动活泼出品，中美科技前沿动态
 
+  - id: kuaguo-chuanmen
+    name: 跨国串门儿计划
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f
+    lang: zh
+    focus: [AI技术, 全球科技趋势]
+    format: narrative
+    added: 2026-03-22
+    active: true
+    note: 一恺主持，用AI翻译国际顶级播客（Sam Altman/Naval等），日更
+
+  - id: fengyuanfengyu
+    name: 枫言枫语
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/5e2864f5418a84a04628e249
+    lang: zh
+    focus: [AI技术, 科技生活]
+    format: panel
+    added: 2026-03-22
+    active: true
+    note: 开发者+设计师双主持，AI Coding/LLM/Apple 生态
+
+  - id: ai-siji
+    name: AI死机
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/693ad24661511a61ddcce7fc
+    lang: zh
+    focus: [AI创业, AI投资]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 视频播客，AI创业者和投资人访谈
+
+  - id: elsewhere
+    name: Elsewhere别处发生
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/68ff657d9c745a6e69da8fcf
+    lang: zh
+    focus: [AI投资, 创业, VC]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 36Kr暗涌主编刘旌，深度访谈投资人和创业者
+
+  - id: ai-xiaojiuguan
+    name: AI小酒馆
+    platform: xiaoyuzhoufm
+    url: https://podcasts.apple.com/cn/podcast/ai%E5%B0%8F%E9%85%92%E9%A6%86/id1822799969
+    lang: zh
+    focus: [AI技术, AI应用]
+    format: panel
+    added: 2026-03-22
+    active: true
+    note: 何夕2077主持，AI新闻入门+实操
+
+  - id: luo-yonghao
+    name: 罗永浩的十字路口
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/68981df29e7bcd326eb91d88
+    lang: zh
+    focus: [科技创业, 人物访谈]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 罗永浩长对话（3-5h），李想/刘靖康/颜俊杰等顶级创始人
+
+  - id: whynottv
+    name: WhynotTV Podcast
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/686a1832222ae2de21fea940
+    lang: zh
+    focus: [AI技术前沿, AI研究]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: CMU博士何泰然主持，硬核AI技术访谈（OpenAI研究员/XGBoost作者等）
+
+  - id: shishufeng
+    name: 诗梳风
+    platform: xiaoyuzhoufm
+    url: https://www.xiaoyuzhoufm.com/podcast/696496f4db4738160d5fabde
+    lang: zh
+    focus: [创意, 设计]
+    format: panel
+    added: 2026-03-22
+    active: true
+    note: 汉洋+重轻，探讨创作过程（非AI主题，偏人文创意）
+
   # ========== 英文播客 ==========
 
   - id: lex-fridman
@@ -184,3 +272,47 @@ feeds:
     added: 2026-03-22
     active: true
     note: Nathan Labenz 主持，AI 前沿研究与应用深度访谈
+
+  - id: joe-rogan
+    name: The Joe Rogan Experience
+    platform: youtube
+    url: https://www.youtube.com/@joerogan
+    lang: en
+    focus: [科技创业, 人物访谈]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 全球最大播客，常访谈 Elon Musk/Zuckerberg/Sam Altman 等科技大佬
+
+  - id: 20vc
+    name: 20VC with Harry Stebbings
+    platform: youtube
+    url: https://www.youtube.com/@20aboroflove
+    lang: en
+    focus: [AI投资, AI创业, VC]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: VC界最知名播客，访谈顶级创始人和投资人（Jensen Huang/Satya Nadella等）
+
+  - id: acquired
+    name: Acquired
+    platform: youtube
+    url: https://www.youtube.com/@AcquiredFM
+    lang: en
+    focus: [科技商业, 公司分析, AI投资]
+    format: interview
+    added: 2026-03-22
+    active: true
+    note: 深度拆解科技公司（NVIDIA/OpenAI/TSMC），间歇访谈CEO
+
+  - id: bg2pod
+    name: BG2Pod
+    platform: youtube
+    url: https://www.youtube.com/@BG2Pod
+    lang: en
+    focus: [AI投资, 科技市场]
+    format: panel
+    added: 2026-03-22
+    active: true
+    note: Bill Gurley + Brad Gerstner，两位顶级投资人聊 AI 和科技市场
