@@ -11,6 +11,13 @@ SYNC_SCRIPT="$REPO_DIR/scripts/mac-auto-sync.sh"
 if [ ! -d "$REPO_DIR/.git" ]; then
     echo "正在克隆仓库..."
     git clone https://github.com/dtdtxgcf/ClaudeCode.git "$REPO_DIR"
+    cd "$REPO_DIR"
+    # 自动检出远程默认分支（可能是 claude/ 开头的分支）
+    DEFAULT_BRANCH=$(git remote show origin | grep 'HEAD branch' | awk '{print $NF}')
+    if [ -n "$DEFAULT_BRANCH" ]; then
+        git checkout "$DEFAULT_BRANCH" 2>/dev/null
+        echo "已切换到分支: $DEFAULT_BRANCH"
+    fi
 fi
 
 # 2. 给同步脚本执行权限
