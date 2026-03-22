@@ -1,0 +1,16 @@
+# Obsidian
+.obsidian/
+.trash/
+
+# macOS
+.DS_Store
+
+# Sync logs
+scripts/.sync.log
+scripts/.sync-stdout.log
+scripts/.sync-stderr.log
+
+# Editor
+*.swp
+*.swo
+*~
