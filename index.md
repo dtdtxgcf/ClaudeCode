@@ -26,3 +26,9 @@ _暂无条目_
 ## 笔记 (Notes)
 
 _暂无条目_
+
+## 录音 (Recordings)
+
+> 存放路径：`notes/recordings/`｜模板：`templates/recording-template.md`
+
+_暂无条目_
