@@ -29,6 +29,6 @@ _暂无条目_
 
 ## 录音
 
-> 存放路径：`notes/recordings/`｜模板：`templates/recording-template.md`
+> 存放路径：`notes/recordings/`｜模板：`.infra/templates/recording-template.md`
 
 _暂无条目_

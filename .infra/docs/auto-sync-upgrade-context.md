@@ -29,14 +29,13 @@ ClaudeCode/
 │   └── other/          # 其他
 ├── notes/              # 快速笔记/灵感
 │   └── recordings/     # 录音笔记
-├── templates/          # 模板文件
-├── scripts/            # 自动化脚本
-│   ├── install-auto-sync.sh   # 一键安装（当前版本：5分钟轮询）
-│   └── mac-auto-sync.sh       # 同步逻辑脚本
-├── docs/               # 文档
 ├── index.md            # 知识库总索引
 ├── CLAUDE.md           # Claude Code 工作流指令
 ├── README.md           # 项目说明
+├── .infra/             # 基础设施（Obsidian 不可见）
+│   ├── scripts/        # 自动化脚本
+│   ├── docs/           # 项目文档
+│   └── templates/      # 模板文件
 └── .gitignore
 ```
 
@@ -48,9 +47,9 @@ ClaudeCode/
 
 ### 2.2 现有脚本
 
-**`scripts/install-auto-sync.sh`**：一键安装，创建 launchd plist（`com.claudecode.autosync`），每 300 秒执行同步脚本。
+**`.infra/scripts/install-auto-sync.sh`**：一键安装，创建 launchd plist（`com.claudecode.autosync`），每 300 秒执行同步脚本。
 
-**`scripts/mac-auto-sync.sh`**：同步逻辑，fetch 所有远程分支，pull 当前分支，自动合并新的 `claude/` 分支内容。
+**`.infra/scripts/mac-auto-sync.sh`**：同步逻辑，fetch 所有远程分支，pull 当前分支，自动合并新的 `claude/` 分支内容。
 
 ### 2.3 launchd plist 位置
 
@@ -75,7 +74,7 @@ ntfy.sh 是免费的推送通知服务，支持 HTTP 长轮询/SSE/WebSocket，�
 
 ### 3.2 需要实现的内容
 
-#### 文件 1：`scripts/sync-knowledge.sh`（同步脚本）
+#### 文件 1：`.infra/scripts/sync-knowledge.sh`（同步脚本）✅ 已创建
 
 功能：
 - `cd` 到仓库目录
@@ -87,9 +86,9 @@ ntfy.sh 是免费的推送通知服务，支持 HTTP 长轮询/SSE/WebSocket，�
 要点：
 - 复用现有 `mac-auto-sync.sh` 的合并逻辑（合并所有 `origin/claude/*` 分支）
 - 仓库路径：`$HOME/ClaudeCode`
-- 日志文件：`$REPO_DIR/scripts/.sync.log`
+- 日志文件：`$REPO_DIR/.infra/scripts/.sync.log`
 
-#### 文件 2：`scripts/watch-knowledge.sh`（ntfy 监听脚本）
+#### 文件 2：`.infra/scripts/watch-knowledge.sh`（ntfy 监听脚本）✅ 已创建
 
 功能：
 - 使用 `curl` 长连接监听 ntfy.sh 的某个频道
@@ -100,10 +99,10 @@ ntfy.sh 是免费的推送通知服务，支持 HTTP 长轮询/SSE/WebSocket，�
 - 频道名使用随机字符串，格式：`claudecode-sync-<random>`
 - 频道名需要写入一个配置文件或作为变量方便修改
 
-#### 文件 3：`scripts/install-realtime-sync.sh`（一键安装脚本）
+#### 文件 3：`.infra/scripts/install-realtime-sync.sh`（一键安装脚本）✅ 已创建
 
 功能：
-1. 生成随机频道名（`openssl rand -hex 4`），保存到 `scripts/.ntfy-channel`
+1. 生成随机频道名（`openssl rand -hex 4`），保存到 `.infra/scripts/.ntfy-channel`
 2. 给脚本添加执行权限
 3. 创建 launchd plist（`com.claudecode.realtime-sync`），配置 `KeepAlive` + `RunAtLoad`
 4. 加载服务
@@ -113,7 +112,7 @@ launchd plist 要点：
 - Label: `com.claudecode.realtime-sync`
 - KeepAlive: true（进程退出后自动重启）
 - RunAtLoad: true
-- 日志输出到 `scripts/.realtime-sync-stdout.log` / `.realtime-sync-stderr.log`
+- 日志输出到 `.infra/scripts/.realtime-sync-stdout.log` / `.realtime-sync-stderr.log`
 
 #### 文件 4：更新 `README.md`
 
@@ -149,9 +148,10 @@ launchd plist 要点：
 
 请新 Session 完成以下工作：
 
-- [ ] 创建 `scripts/sync-knowledge.sh`
-- [ ] 创建 `scripts/watch-knowledge.sh`
-- [ ] 创建 `scripts/install-realtime-sync.sh`
-- [ ] 更新 `README.md` 添加实时同步方案说明
-- [ ] 测试脚本语法（`bash -n` 检查）
-- [ ] git commit & push
+- [x] 创建 `.infra/scripts/sync-knowledge.sh`
+- [x] 创建 `.infra/scripts/watch-knowledge.sh`
+- [x] 创建 `.infra/scripts/install-realtime-sync.sh`
+- [x] 更新 `README.md` 添加实时同步方案说明
+- [x] 目录重构：scripts/docs/templates 移入 `.infra/`
+- [x] 测试脚本语法（`bash -n` 检查）
+- [x] git commit & push

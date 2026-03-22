@@ -6,9 +6,12 @@
 .DS_Store
 
 # Sync logs
-scripts/.sync.log
-scripts/.sync-stdout.log
-scripts/.sync-stderr.log
+.infra/scripts/.sync.log
+.infra/scripts/.sync-stdout.log
+.infra/scripts/.sync-stderr.log
+.infra/scripts/.realtime-sync-stdout.log
+.infra/scripts/.realtime-sync-stderr.log
+.infra/scripts/.ntfy-channel
 
 # Editor
 *.swp

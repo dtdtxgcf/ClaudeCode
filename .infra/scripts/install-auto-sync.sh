@@ -5,7 +5,7 @@
 REPO_DIR="$HOME/ClaudeCode"
 PLIST_NAME="com.claudecode.autosync"
 PLIST_PATH="$HOME/Library/LaunchAgents/${PLIST_NAME}.plist"
-SYNC_SCRIPT="$REPO_DIR/scripts/mac-auto-sync.sh"
+SYNC_SCRIPT="$REPO_DIR/.infra/scripts/mac-auto-sync.sh"
 
 # 1. 如果仓库不存在，先克隆
 if [ ! -d "$REPO_DIR/.git" ]; then
@@ -42,9 +42,9 @@ cat > "$PLIST_PATH" << EOF
     <key>RunAtLoad</key>
     <true/>
     <key>StandardOutPath</key>
-    <string>${REPO_DIR}/scripts/.sync-stdout.log</string>
+    <string>${REPO_DIR}/.infra/scripts/.sync-stdout.log</string>
     <key>StandardErrorPath</key>
-    <string>${REPO_DIR}/scripts/.sync-stderr.log</string>
+    <string>${REPO_DIR}/.infra/scripts/.sync-stderr.log</string>
 </dict>
 </plist>
 EOF
@@ -60,5 +60,5 @@ echo ""
 echo "常用命令："
 echo "   停止同步：launchctl unload $PLIST_PATH"
 echo "   启动同步：launchctl load $PLIST_PATH"
-echo "   查看日志：cat $REPO_DIR/scripts/.sync.log"
+echo "   查看日志：cat $REPO_DIR/.infra/scripts/.sync.log"
 echo "   卸载服务：launchctl unload $PLIST_PATH && rm $PLIST_PATH"
