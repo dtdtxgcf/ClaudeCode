@@ -1,0 +1,112 @@
+---
+title: OpenClaw — 开源本地优先 AI Agent 平台全面解析
+source: https://github.com/openclaw/openclaw
+date: 2026-03-22
+category: tech
+tags:
+  - AI-Agent
+  - OpenClaw
+  - 开源
+  - 本地部署
+  - 自动化
+aliases:
+  - OpenClaw
+  - 龙虾 AI
+---
+
+# OpenClaw — 开源本地优先 AI Agent 平台全面解析
+
+## 摘要
+
+OpenClaw 是由前 PSPDFKit 创始人 Peter Steinberger 发起的开源、本地优先 AI 智能体平台。它将大模型从"问答机器人"变成能自主执行任务的"数字员工"——通过 WhatsApp、Telegram 等聊天应用即可下达指令，OpenClaw 自动拆解步骤、调用工具完成交付。2026 年初爆火，GitHub 星标迅速突破 10 万。
+
+## 要点
+
+- **本地优先**：运行在自己的设备上，数据完全自主掌控
+- **多通道接入**：支持 WhatsApp、Telegram、Slack、Discord、Signal、iMessage 等 20+ 聊天平台
+- **工具使用型 Agent**：通过"技能（Skills）"插件系统，可操作浏览器、文件系统、邮件、日历等
+- **不是现成 App**：目前更适合技术爱好者和开发者，普通用户使用门槛较高
+- **安全争议**：被 Gartner 和 Cisco 指出"默认不安全"，存在提示注入攻击风险
+
+## 详细内容
+
+### 发展历程
+
+| 时间 | 事件 |
+|------|------|
+| 2025 年 | Peter Steinberger 推出初版原型 Clawdbot |
+| 2026 年初 | 因商标问题更名为 Moltbot |
+| 2026 年 1 月 | 正式定名为 OpenClaw |
+| 2026 年 2 月 | GitHub 星标突破 10 万，病毒式传播 |
+| 2026 年 2 月 14 日 | Steinberger 宣布加入 OpenAI，项目移交开源基金会 |
+| 2026 年 3 月 GTC | Nvidia CEO 黄仁勋称其"可能是有史以来最重要的软件发布" |
+
+### 核心功能
+
+- **多渠道聊天接入**：WhatsApp、Telegram、Slack、Discord、Google Chat、Signal、iMessage、IRC、Microsoft Teams、Matrix 等 20+ 平台
+- **语音交互**：Voice Wake + Talk Mode，支持 macOS/iOS/Android
+- **浏览器自动化**：控制 Chrome/Chromium 执行网页操作
+- **任务自动化**：清理收件箱、发送邮件、管理日历、航班值机等
+- **多 Agent 路由**：支持多智能体会话管理
+- **定时任务**：Cron jobs、Webhooks、Gmail Pub/Sub 集成
+- **Live Canvas**：可视化交互式工作区
+- **长期记忆**：跨对话记住用户偏好和上下文
+
+### 技术架构
+
+- **运行时**：Node.js 24（推荐）或 Node.js 22.16+
+- **语言**：全栈 TypeScript
+- **通信**：WebSocket 控制平面架构
+- **框架**：Express / Hono
+- **LLM 后端**：支持 Claude、DeepSeek、OpenAI GPT 等
+- **插件系统**：100+ 预构建技能（Skills）
+
+### 系统要求
+
+| 项目 | 最低要求 | 推荐 |
+|------|----------|------|
+| CPU | 4 线程 | AMD Ryzen AI NPU 设备 |
+| 内存 | 2 GB | 4 GB+ |
+| 存储 | SSD 必需 | — |
+| 平台 | macOS / Linux / Windows (WSL2) | — |
+
+### 安装方式
+
+```bash
+# 推荐方式（CLI）
+npm install -g openclaw@latest
+openclaw onboard --install-daemon
+
+# Docker
+docker pull openclaw/openclaw
+
+# 从源码构建
+git clone https://github.com/openclaw/openclaw.git
+pnpm install && pnpm build
+```
+
+### 离普通人还差几道门槛？
+
+截图文章（Q博杂谈）指出 OpenClaw 不应被当作"现成 App"：
+
+1. **部署门槛**：需要自行搭建服务器或使用 Mac Mini / 云端部署
+2. **配置门槛**：需要对接 LLM API、配置聊天渠道
+3. **安全门槛**：权限管理复杂，配置不当可能暴露敏感数据
+4. **维护门槛**：需要持续更新和监控
+
+### 安全风险
+
+- Gartner 分析师称其"默认不安全"
+- Cisco 安全分析师称其为"安全噩梦"
+- 需要广泛权限（邮件、日历、消息等），配置不当存在风险
+- 容易受到提示注入攻击（Prompt Injection）
+- Nvidia 推出企业版 NemoClaw 以解决安全问题
+
+## 相关笔记
+
+- [[2026-03-22-ghostty-terminal-claude-code-workflow]]
+- [[2026-03-22-claude-code-claude-md-tips]]
+
+## 原始信息
+
+> 用户分享微信公众号文章截图：「Q博杂谈之一零五：别把 OpenClaw 当成现成 App：它离普通人可用，还差几道门槛 & OpenClaw 完全指南：从零搭建你的 AI Agent 全栈工作站」，来自"Q博肌肤实验室"，发布于 2026 年 3 月 9 日。文章提到 OpenClaw 最近很火，深圳龙岗区出台支持 OpenClaw 的政策，Q博自己也养了 2 只"龙虾"（OpenClaw 实例），一只云端部署，一只 Mac Mini。
