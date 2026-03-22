@@ -13,6 +13,7 @@ date: 2026-03-22
 - [[2026-03-22-Claude-Code榜一大哥刘小排]] — Claude Code 全球 token 消耗榜一用户刘小排的 AI 创业实战与工具使用心得 `#Claude-Code` `#AI创业` `#播客` `#Agent`
 - [[2026-03-22-Claude-HUD状态栏插件]] — Claude Code 实时状态栏插件，显示 context 用量、工具活动、Agent 状态，10.9k stars `#Claude-Code` `#效率工具` `#插件`
 - [[2026-03-22-OpenClaw-Workspace配置最佳实践]] — OpenClaw 六大核心文件（IDENTITY/SOUL/AGENTS/TOOLS/HEARTBEAT/USER）配置指南与社区模板 `#OpenClaw` `#AI-Agent` `#Workspace配置` `#提示工程`
+- [[2026-03-22-OpenClaw超级助理配置方案]] — AI 投资人场景完整超级助理方案：全部 MD 文件写法、分层记忆、Heartbeat 监控、Super Proactive Agent、避坑指南 `#OpenClaw` `#超级助理` `#AI-Agent` `#投资研究`
 
 ## 设计
 
