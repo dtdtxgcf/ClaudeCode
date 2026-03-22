@@ -1,6 +1,10 @@
 ---
 title: Ghostty 终端 — Claude Code 团队推荐的终端模拟器
-source: https://x.com/bcherny/status/2017742753971769626
+sources:
+  - https://x.com/bcherny/status/2017742753971769626
+  - https://ghostty.org/
+  - https://gist.github.com/joyrexus/e20ead11b3df4de46ab32b4a7269abe0
+  - https://howborisusesclaudecode.com
 date: 2026-03-22
 category: tech
 tags:
@@ -74,6 +78,17 @@ Ghostty 是 Mitchell Hashimoto（Vagrant、Terraform、HashiCorp 创始人）从
 - **lazygit**：终端 Git 客户端，可视化管理代码
 - **tmux**：终端复用器，可选搭配使用
 - **cmux**：基于 libghostty 构建的终端，添加了垂直 tab 等功能
+
+## 信息源 (Sources)
+
+| # | 来源 | 链接 | 说明 |
+|---|------|------|------|
+| 1 | Boris Cherny 推文 - Terminal Setup | [X/Twitter](https://x.com/bcherny/status/2017742753971769626) | Claude Code 创始人分享的团队终端配置建议，原始信息源 |
+| 2 | Ghostty 官网 | [ghostty.org](https://ghostty.org/) | Ghostty 终端模拟器官方网站，含下载和文档 |
+| 3 | Boris Team Tips 完整版 | [GitHub Gist](https://gist.github.com/joyrexus/e20ead11b3df4de46ab32b4a7269abe0) | Boris 分享的 Claude Code 团队使用技巧完整整理 |
+| 4 | How Boris Uses Claude Code | [howborisusesclaudecode.com](https://howborisusesclaudecode.com) | Boris 的 53 条 Claude Code 使用建议合集 |
+| 5 | Ghostty GitHub 仓库 | [github.com/ghostty-org/ghostty](https://github.com/ghostty-org/ghostty) | 开源代码仓库，含安装说明和 issue 讨论 |
+| 6 | Mitchell Hashimoto 博客 | [mitchellh.com/ghostty](https://mitchellh.com/ghostty) | Ghostty 作者的项目介绍和开发背景 |
 
 ## 相关笔记
 
