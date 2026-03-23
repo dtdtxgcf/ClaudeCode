@@ -26,3 +26,46 @@ episodes:
     status: archived
     note: knowledge/tech/2025-04-27-42章经-Agent开发上半场环境Tools与Context.md
     transcript: true
+  - podcast: Latent Space
+    episode: "Why Anthropic Thinks AI Should Have Its Own Computer — Felix Rieseberg of Claude Cowork & Claude Code Desktop"
+    title: "Why Anthropic Thinks AI Should Have Its Own Computer"
+    date: 2026-03-17
+    score: 9.05
+    status: archived
+    note: knowledge/tech/2026-03-23-Latent-Space-Felix-Rieseberg-Claude-Cowork.md
+    transcript: true
+  - podcast: 20VC with Harry Stebbings
+    episode: "Why Cursor is Dead | An AI Tsunami is Coming — Jerry Murdock"
+    title: "Why Cursor is Dead | An AI Tsunami is Coming"
+    date: 2026-03-15
+    score: 8.0
+    status: recommended
+    transcript: false
+  - podcast: Dwarkesh Podcast
+    episode: "Terence Tao – Kepler, Newton, and the True Nature of Mathematical Discovery"
+    title: "Terence Tao – Kepler, Newton, and the True Nature of Mathematical Discovery"
+    date: 2026-03-20
+    score: 7.85
+    status: recommended
+    transcript: true
+  - podcast: All-In Podcast
+    episode: "EP264: Iran War Economy, AI Revenue Surge, Open Source Showdown"
+    title: "EP264"
+    date: 2026-03-13
+    score: 7.45
+    status: recommended
+    transcript: false
+  - podcast: 硅谷101
+    episode: "Clawdbot 全面拆解：AI Agent 爆发元年的第一个现象级产品"
+    title: "Clawdbot 全面拆解"
+    date: 2026-02-10
+    score: 7.35
+    status: recommended
+    transcript: false
+  - podcast: 晚点聊 LateTalk
+    episode: "153"
+    title: "153: 阿里Qwen人事变动：误读、近况、伏笔和未来"
+    date: 2026-03-04
+    score: 7.05
+    status: recommended
+    transcript: false
