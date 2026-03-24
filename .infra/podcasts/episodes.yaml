@@ -93,3 +93,39 @@ episodes:
     score: 7.05
     status: recommended
     transcript: false
+  - podcast: No Priors
+    episode: "Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI"
+    title: "Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI"
+    date: 2026-03-20
+    score: 9.8
+    status: archived
+    note: knowledge/tech/2026-03-22-Karpathy-Code-Agents与AutoResearch.md
+    transcript: true
+  - podcast: All-In Podcast
+    episode: "EP265: Travis Kalanick & Michael Dell Live from Austin, Texas"
+    title: "EP265: Travis Kalanick & Michael Dell Live from Austin, Texas"
+    date: 2026-03-17
+    score: 7.9
+    status: recommended
+    transcript: false
+  - podcast: The Cognitive Revolution
+    episode: "Zvi's Mic Works! Recursive Self-Improvement, Live Player Analysis, Anthropic vs DoW + More!"
+    title: "Zvi's Mic Works! Recursive Self-Improvement, Live Player Analysis, Anthropic vs DoW"
+    date: 2026-03-19
+    score: 8.55
+    status: recommended
+    transcript: false
+  - podcast: 晚点聊 LateTalk
+    episode: "154"
+    title: "154: 具身智能的现状与测评难题"
+    date: 2026-03-14
+    score: 7.65
+    status: recommended
+    transcript: false
+  - podcast: Dwarkesh Podcast
+    episode: "The Most Important Question Nobody's Asking About AI"
+    title: "The Most Important Question Nobody's Asking About AI"
+    date: 2026-03-11
+    score: 6.45
+    status: scanned
+    transcript: false
