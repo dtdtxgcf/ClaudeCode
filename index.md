@@ -14,6 +14,7 @@ date: 2026-03-22
 - [[2026-03-22-Claude-HUD状态栏插件]] — Claude Code 实时状态栏插件，显示 context 用量、工具活动、Agent 状态，10.9k stars `#Claude-Code` `#效率工具` `#插件`
 - [[2026-03-22-OpenClaw-Workspace配置最佳实践]] — OpenClaw 六大核心文件（IDENTITY/SOUL/AGENTS/TOOLS/HEARTBEAT/USER）配置指南与社区模板 `#OpenClaw` `#AI-Agent` `#Workspace配置` `#提示工程`
 - [[2026-03-22-OpenClaw超级助理配置方案]] — AI 投资人场景完整超级助理方案：全部 MD 文件写法、分层记忆、Heartbeat 监控、Super Proactive Agent、避坑指南 `#OpenClaw` `#超级助理` `#AI-Agent` `#投资研究`
+- [[2026-03-24-Claude-Code创意玩法与高级技巧大全]] — 35+ 创意用法深度研究：病毒项目、Hooks/MCP/Skills 高级特性、多 Agent 协作、CI/CD 集成、冷门技巧 `#Claude-Code` `#AI编程` `#工作流` `#MCP` `#Agent`
 
 ## 设计
 
