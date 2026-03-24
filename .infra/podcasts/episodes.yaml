@@ -93,14 +93,6 @@ episodes:
     score: 7.05
     status: recommended
     transcript: false
-  - podcast: No Priors
-    episode: "Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI"
-    title: "Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI"
-    date: 2026-03-20
-    score: 9.8
-    status: archived
-    note: knowledge/tech/2026-03-22-Karpathy-Code-Agents与AutoResearch.md
-    transcript: true
   - podcast: All-In Podcast
     episode: "EP265: Travis Kalanick & Michael Dell Live from Austin, Texas"
     title: "EP265: Travis Kalanick & Michael Dell Live from Austin, Texas"
