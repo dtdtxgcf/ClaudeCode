@@ -39,6 +39,7 @@ _暂无条目_
 - [[2026-03-22-Karpathy-Code-Agents与AutoResearch]] — No Priors：Karpathy 彻底停止手写代码，AutoResearch 单GPU 2天跑700实验 `#播客` `#AI前沿` `#Code-Agent` `#AutoResearch` ⭐9.85
 - [[2026-03-22-翁家翌-OpenAI后训练RL核心]] — WhynotTV #4：OpenAI 核心工程师翁家翌，GPT后训练RL基础设施搭建者 `#播客` `#OpenAI` `#强化学习` `#后训练` ⭐9.55
 - [[2026-03-24-Latent-Space-Anthropic-Agent平台战略]] — Latent Space：Felix Rieseberg 深度解读 Anthropic Agent 平台战略、Cowork VM 架构、Skills 系统、脚手架吸收论 `#播客` `#Anthropic` `#Claude-Cowork` `#Agent平台` ⭐8.75
+- [[2026-03-17-硅谷101-462-GTC2026现场直击]] — 硅谷101 #462：GTC 2026 现场直击，Vera Rubin 架构、Groq 整合、万亿美元预言、OpenClaw 成 Agent OS `#播客` `#NVIDIA` `#GTC` `#AI基础设施` `#OpenClaw` ⭐7.95
 
 ## 投资研究
 

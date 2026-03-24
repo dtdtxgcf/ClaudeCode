@@ -58,6 +58,14 @@ episodes:
     status: archived
     note: knowledge/tech/2026-03-24-Latent-Space-Anthropic-Agent平台战略.md
     transcript: true
+  - podcast: 硅谷101|中国版
+    episode: "462"
+    title: "GTC 2026 现场直击：黄仁勋揭秘万亿美金时代的 AI 工厂与智能体 OS"
+    date: 2026-03-17
+    score: 7.95
+    status: archived
+    note: knowledge/tech/2026-03-17-硅谷101-462-GTC2026现场直击.md
+    transcript: false
   - podcast: 20VC with Harry Stebbings
     episode: "Why Cursor is Dead | An AI Tsunami is Coming — Jerry Murdock"
     title: "Why Cursor is Dead | An AI Tsunami is Coming"
