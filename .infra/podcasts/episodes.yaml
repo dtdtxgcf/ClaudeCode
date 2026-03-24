@@ -26,13 +26,37 @@ episodes:
     status: archived
     note: knowledge/tech/2025-04-27-42章经-Agent开发上半场环境Tools与Context.md
     transcript: true
-  - podcast: Latent Space
-    episode: "Why Anthropic Thinks AI Should Have Its Own Computer — Felix Rieseberg of Claude Cowork & Claude Code Desktop"
-    title: "Why Anthropic Thinks AI Should Have Its Own Computer"
-    date: 2026-03-17
-    score: 9.05
+  - podcast: 张小珺 商业访谈录
+    episode: "EP133"
+    title: "对谢赛宁的7小时马拉松访谈：世界模型、AMI Labs与两次拒绝Ilya"
+    date: 2026-03-16
+    score: 10.0
     status: archived
-    note: knowledge/tech/2026-03-23-Latent-Space-Felix-Rieseberg-Claude-Cowork.md
+    note: knowledge/tech/2026-03-22-谢赛宁7小时马拉松访谈.md
+    transcript: false
+  - podcast: No Priors
+    episode: "Andrej Karpathy Interview"
+    title: "Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI"
+    date: 2026-03-21
+    score: 9.85
+    status: archived
+    note: knowledge/tech/2026-03-22-Karpathy-Code-Agents与AutoResearch.md
+    transcript: true
+  - podcast: WhynotTV Podcast
+    episode: "#4"
+    title: "翁家翌：OpenAI、GPT、强化学习、后训练、天授"
+    date: 2026-03-18
+    score: 9.55
+    status: archived
+    note: knowledge/tech/2026-03-22-翁家翌-OpenAI后训练RL核心.md
+    transcript: false
+  - podcast: Latent Space
+    episode: "Why Anthropic Thinks AI Should Have Its Own Computer"
+    title: "Why Anthropic Thinks AI Should Have Its Own Computer — Felix Rieseberg of Claude Cowork"
+    date: 2026-03-17
+    score: 8.75
+    status: archived
+    note: knowledge/tech/2026-03-24-Latent-Space-Anthropic-Agent平台战略.md
     transcript: true
   - podcast: 20VC with Harry Stebbings
     episode: "Why Cursor is Dead | An AI Tsunami is Coming — Jerry Murdock"

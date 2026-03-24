@@ -1,6 +1,6 @@
 ---
 title: 知识库索引
-date: 2026-03-22
+date: 2026-03-24
 ---
 
 # 知识库索引
@@ -37,7 +37,7 @@ _暂无条目_
 - [[2026-03-22-谢赛宁7小时马拉松访谈]] — 张小珺 EP133：谢赛宁7小时深度访谈，AMI Labs创业内幕、世界模型、两次拒绝Ilya `#播客` `#AI前沿` `#世界模型` `#AMI-Labs` ⭐10.0
 - [[2026-03-22-Karpathy-Code-Agents与AutoResearch]] — No Priors：Karpathy 彻底停止手写代码，AutoResearch 单GPU 2天跑700实验 `#播客` `#AI前沿` `#Code-Agent` `#AutoResearch` ⭐9.85
 - [[2026-03-22-翁家翌-OpenAI后训练RL核心]] — WhynotTV #4：OpenAI 核心工程师翁家翌，GPT后训练RL基础设施搭建者 `#播客` `#OpenAI` `#强化学习` `#后训练` ⭐9.55
-- [[2026-03-23-Latent-Space-Felix-Rieseberg-Claude-Cowork]] — Anthropic Felix Rieseberg：Claude Cowork VM沙盒架构、Skills胜MCP、计划-执行循环，10天用Claude Code写出自己 `#播客` `#AI-Agent` `#Claude-Cowork` `#Anthropic` ⭐9.05
+- [[2026-03-24-Latent-Space-Anthropic-Agent平台战略]] — Latent Space：Felix Rieseberg 深度解读 Anthropic Agent 平台战略、Cowork VM 架构、Skills 系统、脚手架吸收论 `#播客` `#Anthropic` `#Claude-Cowork` `#Agent平台` ⭐8.75
 
 ## 投资研究
 
