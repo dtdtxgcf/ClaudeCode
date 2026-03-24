@@ -49,6 +49,13 @@ _暂无条目_
 ### 公司
 _暂无条目_
 
+## Inbox（快速记录）
+
+> 微信/飞书 → OpenClaw → GitHub API → 自动同步到 Obsidian
+> 模板：`.infra/templates/inbox-template.md`｜Skill：`.infra/openclaw/skill-inbox-capture.md`
+
+_暂无条目_
+
 ## 笔记
 
 _暂无条目_
