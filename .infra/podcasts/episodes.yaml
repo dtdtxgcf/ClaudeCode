@@ -129,3 +129,27 @@ episodes:
     score: 6.45
     status: scanned
     transcript: false
+  - podcast: 创世的沉思
+    episode: "与周鸿祎聊天才之国、太空算力、与后AGI时代"
+    title: "创世的沉思：与周鸿祎聊天才之国、太空算力、与后AGI时代"
+    date: 2026-03-23
+    score: 8.60
+    status: archived
+    note: knowledge/tech/2026-03-23-创世的沉思-周鸿祎谈后AGI时代.md
+    transcript: false
+  - podcast: 待确认
+    episode: "AI时代最应该做的反而是归纳与总结"
+    title: "AI时代最应该做的反而是归纳与总结"
+    date: 2026-03-23
+    score: 7.45
+    status: archived
+    note: knowledge/tech/2026-03-23-AI时代归纳与总结.md
+    transcript: false
+  - podcast: 待确认
+    episode: "新一波超级婴儿潮：Agent人口大爆发和加速的时间"
+    title: "新一波超级婴儿潮：Agent人口大爆发和加速的时间"
+    date: 2026-03-23
+    score: 8.15
+    status: archived
+    note: knowledge/tech/2026-03-23-Agent人口大爆发-超级婴儿潮.md
+    transcript: false
