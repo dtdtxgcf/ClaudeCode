@@ -169,3 +169,19 @@ episodes:
     status: archived
     note: knowledge/tech/2026-03-23-Demis-Hassabis预判AGI.md
     transcript: true
+  - podcast: 十字路口Crossing
+    episode: "20个问题，搞懂OpenClaw：爆红机制、本质变化、创业机会"
+    title: "20个问题，搞懂OpenClaw：爆红机制、本质变化、创业机会"
+    date: 2026-03-08
+    score: 8.80
+    status: archived
+    note: knowledge/tech/2026-03-09-十字路口-20个问题搞懂OpenClaw.md
+    transcript: false
+  - podcast: 知行小酒馆
+    episode: "E146"
+    title: "E146.财富在β中，α在生活里"
+    date: 2026-03-23
+    score: 7.80
+    status: archived
+    note: knowledge/tech/2026-03-23-财富在β中α在生活里.md
+    transcript: false
