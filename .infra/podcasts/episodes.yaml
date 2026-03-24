@@ -153,3 +153,19 @@ episodes:
     status: archived
     note: knowledge/tech/2026-03-23-Agent人口大爆发-超级婴儿潮.md
     transcript: false
+  - podcast: Founder Park
+    episode: "NO.7"
+    title: "Notion创始人Ivan Zhao：好的AI产品，做到7.5分就够了"
+    date: 2026-03-23
+    score: 8.60
+    status: archived
+    note: knowledge/tech/2026-03-23-Notion创始人Ivan-Zhao谈AI产品.md
+    transcript: true
+  - podcast: 硅谷101
+    episode: "#401"
+    title: "变革规模是工业革命的100倍：Demis Hassabis预判AGI"
+    date: 2026-03-23
+    score: 9.05
+    status: archived
+    note: knowledge/tech/2026-03-23-Demis-Hassabis预判AGI.md
+    transcript: true
