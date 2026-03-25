@@ -47,6 +47,7 @@ _暂无条目_
 - [[2026-03-23-Demis-Hassabis预判AGI]] — DeepMind CEO Hassabis预判AGI：变革规模是工业革命的100倍，世界模型+自动化实验双路径 `#播客` `#AGI` `#DeepMind` `#世界模型` ⭐9.05
 - [[2026-03-09-十字路口-20个问题搞懂OpenClaw]] — 十字路口「20问」系列：OpenClaw 爆火 30 天后结构化拆解，爆红机制、本质变化、创业机会 `#播客` `#OpenClaw` `#AI-Agent` `#创业机会` ⭐8.80
 - [[2026-03-23-财富在β中α在生活里]] — 知行小酒馆 E146 对话付鹏：信息差即竞争力、资产端→负债端转型、普通人机会捕捉 `#播客` `#投资策略` `#宏观经济` `#信息差` ⭐7.80
+- [[2026-03-23-Lex_Fridman_Jensen_Huang_NVIDIA_AI_Podcast]] — Lex Fridman Interview Jensen Huang: NVIDIA – The $4 Trillion Company & the AI Revolution `#播客` `#AI` `#NVIDIA` `#JensenHuang` ⭐9.35
 
 ## 投资研究
 

@@ -234,3 +234,11 @@ episodes:
     score: 5.60
     status: scanned
     transcript: false
+  - podcast: Lex Fridman Podcast
+    episode: "#494"
+    title: "Lex Fridman Interview Jensen Huang: NVIDIA – The $4 Trillion Company & the AI Revolution"
+    date: 2026-03-23
+    score: 9.35
+    status: archived
+    note: knowledge/tech/2026-03-23-Lex_Fridman_Jensen_Huang_NVIDIA_AI_Podcast.md
+    transcript: true
