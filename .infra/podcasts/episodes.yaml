@@ -242,3 +242,26 @@ episodes:
     status: archived
     note: knowledge/tech/2026-03-23-Lex_Fridman_Jensen_Huang_NVIDIA_AI_Podcast.md
     transcript: true
+  - podcast: Latent Space
+    episode: "Dreamer: the Personal Agent OS"
+    title: "Dreamer: the Personal Agent OS — David Singleton"
+    date: 2026-03-20
+    score: 8.60
+    status: recommended
+    transcript: true
+    url: https://www.latent.space/p/dreamer
+  - podcast: BG2Pod
+    episode: "ChatGPT - The Super Assistant Era"
+    title: "ChatGPT – The Super Assistant Era | Inside OpenAI Enterprise (Nick Turley)"
+    date: 2026-03-15
+    score: 8.15
+    status: recommended
+    transcript: false
+    url: https://pod.wave.co/podcast/bg2pod-with-brad-gerstner-and-bill-gurley/chatgpt-the-super-assistant-era-bg2-guest-interview
+  - podcast: All-In Podcast
+    episode: "Are Psychedelics the Key to Living Forever?"
+    title: "Are Psychedelics the Key to Living Forever? (ft. Bryan Johnson)"
+    date: 2026-03-26
+    score: 6.15
+    status: scanned
+    transcript: false
