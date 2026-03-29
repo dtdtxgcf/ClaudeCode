@@ -326,3 +326,20 @@ episodes:
     score: 5.75
     status: scanned
     transcript: false
+  - podcast: Dwarkesh Podcast
+    episode: "Dario Amodei — We are near the end of the exponential"
+    title: "Dario Amodei — We are near the end of the exponential"
+    date: 2026-02-13
+    score: 9.05
+    status: archived
+    note: Arch/播客/2026-02-13-Dwarkesh-Dario-Amodei-我们正接近指数的终点.md
+    transcript: true
+    url: https://www.dwarkesh.com/p/dario-amodei-2
+  - podcast: The Cognitive Revolution
+    episode: "Universal Medical Intelligence: OpenAI's Plan to Elevate Human Health"
+    title: "Universal Medical Intelligence: OpenAI's Plan to Elevate Human Health, with Karan Singhal"
+    date: 2026-02-25
+    score: 7.65
+    status: recommended
+    transcript: true
+    url: https://www.cognitiverevolution.ai/universal-medical-intelligence-openai-s-plan-to-elevate-human-health-with-karan-singhal/
