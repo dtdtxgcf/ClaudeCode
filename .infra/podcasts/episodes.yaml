@@ -265,3 +265,64 @@ episodes:
     score: 6.15
     status: scanned
     transcript: false
+  - podcast: All-In Podcast
+    episode: "Anthropic's Generational Run / OpenAI Panic Mode / AI Moats"
+    title: "Anthropic's Generational Run, OpenAI Focused or Panic Mode?, AI Valuation Impacts, Moats & Disruption"
+    date: 2026-03-27
+    score: 8.0
+    status: recommended
+    transcript: false
+    url: https://allin.com/episodes
+  - podcast: Dwarkesh Podcast
+    episode: "Dylan Patel — 3 Big Bottlenecks to Scaling AI Compute"
+    title: "Dylan Patel — Deep Dive on the 3 Big Bottlenecks to Scaling AI Compute"
+    date: 2026-03-13
+    score: 8.5
+    status: recommended
+    transcript: true
+    url: https://www.dwarkesh.com/p/dylan-patel
+  - podcast: No Priors
+    episode: "Ep.153 Simon Last Notion Co-founder"
+    title: "From Coder to Manager: Navigating the Shift to Agentic Engineering with Notion Co-Founder Simon Last"
+    date: 2026-03-12
+    score: 8.3
+    status: recommended
+    transcript: true
+    url: https://open.spotify.com/episode/33TEE8FPYupsQecWy6Tvqi
+  - podcast: 硅谷101
+    episode: "深度解析GTC 2026"
+    title: "深度解析GTC 2026：英伟达万亿订单背后的AI大爆发、Token经济学与失衡供应链"
+    date: 2026-03-28
+    score: 8.2
+    status: recommended
+    transcript: false
+    url: https://www.bilibili.com/video/BV1oLQqBtE2F/
+  - podcast: 硅谷101
+    episode: "谷歌TPU深度解析"
+    title: "谷歌TPU能撼动英伟达吗？前TPU工程师首次揭秘"
+    date: 2026-03-25
+    score: 8.65
+    status: recommended
+    transcript: false
+  - podcast: 硅谷101
+    episode: "AI医疗大年"
+    title: "AI医疗大年：谁在入局，谁在领跑？"
+    date: 2026-03-20
+    score: 7.75
+    status: recommended
+    transcript: false
+  - podcast: Latent Space
+    episode: "It's Time to Science"
+    title: "It's Time to Science — AI for Materials Science and Beyond"
+    date: 2026-03-24
+    score: 8.05
+    status: recommended
+    transcript: true
+    url: https://www.latent.space/p/science
+  - podcast: All-In Podcast
+    episode: "Matt Mahan California Governor"
+    title: "Is THIS California's Next Governor? Matt Mahan's Bold Plan for the Golden State"
+    date: 2026-03-23
+    score: 5.75
+    status: scanned
+    transcript: false
