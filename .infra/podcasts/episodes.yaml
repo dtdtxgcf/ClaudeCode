@@ -343,3 +343,103 @@ episodes:
     status: recommended
     transcript: true
     url: https://www.cognitiverevolution.ai/universal-medical-intelligence-openai-s-plan-to-elevate-human-health-with-karan-singhal/
+  # ========== 2026-03-30 扫描新增 ==========
+  - podcast: 跨国串门儿计划
+    episode: "#474"
+    title: "Instagram联创 Mike Krieger：Building变简单，但"做对"更难了（Anthropic CPO）"
+    date: 2026-03-29
+    score: 8.70
+    status: recommended
+    transcript: false
+    url: https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f
+  - podcast: 跨国串门儿计划
+    episode: "#475"
+    title: "Cursor设计师Ryo Lu：AI时代的灵魂设计，从"画图"到"雕塑"的通用原则"
+    date: 2026-03-29
+    score: 7.50
+    status: recommended
+    transcript: false
+    url: https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f
+  - podcast: 跨国串门儿计划
+    episode: "#473"
+    title: "AlphaGo十周年：DeepMind从围棋到解决科学难题（Thore Graepel & Pushmeet Kohli）"
+    date: 2026-03-27
+    score: 7.10
+    status: recommended
+    transcript: false
+    url: https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f
+  - podcast: 创业内幕 Startup Insider
+    episode: "S8 Vol.1"
+    title: "银河通用王鹤：具身智能从仿人到通用，商业化破局三大场景"
+    date: 2026-03-26
+    score: 7.60
+    status: recommended
+    transcript: false
+    url: https://www.xiaoyuzhoufm.com/podcast/5e7cccf8418a84a046c4e7f9
+  - podcast: What's Next 科技早知道
+    episode: "S10E04"
+    title: "GTC 2026：AI的下一个战场不在模型，而是「推理系统」（ft. Eigen AI Di Jin）"
+    date: 2026-03-25
+    score: 7.80
+    status: recommended
+    transcript: false
+  - podcast: AI局内人
+    episode: "OpenClaw闭门局"
+    title: "OpenClaw闭门局：和30位创业者一起聊，真正值得关注的Agent生态位在哪？"
+    date: 2026-03-24
+    score: 7.55
+    status: recommended
+    transcript: false
+  - podcast: 罗永浩的十字路口
+    episode: "杨笠×罗永浩"
+    title: "杨笠×罗永浩！不想成为"靶心"，也无意成为"灯塔""
+    date: 2026-03-27
+    score: 7.25
+    status: recommended
+    transcript: false
+  - podcast: 20VC with Harry Stebbings
+    episode: "Why You Need a $1BN Fund To Do Series A Today"
+    title: "Why You Need a $1BN Fund To Do Series A Today | OpenAI vs Anthropic | SpaceX at $2TRN"
+    date: 2026-03-26
+    score: 6.80
+    status: scanned
+    transcript: false
+    url: https://www.thetwentyminutevc.com/
+  # ========== 2026-04-01 扫描新增 ==========
+  - podcast: 晚点聊 LateTalk
+    episode: "AI季报26Q1"
+    title: "OpenClaw、OpenAI vs Anthropic的三重对阵、自进化丨AI季报26Q1"
+    date: 2026-03-31
+    score: 7.40
+    status: recommended
+    transcript: false
+  - podcast: 播客翻译计划
+    episode: "Paul Graham YC往事"
+    title: "与 Paul Graham 闲聊 YC 往事"
+    date: 2026-03-31
+    score: 7.20
+    status: recommended
+    transcript: false
+  - podcast: 跨国串门儿计划
+    episode: "#478"
+    title: "利用 AI 提升个人生产力：如何用 Claude 打造生活操作系统"
+    date: 2026-03-31
+    score: 7.15
+    status: recommended
+    transcript: false
+    url: https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f
+  - podcast: 跨国串门儿计划
+    episode: "#479"
+    title: "万亿美金基金的 AI 进化论：挪威主权基金实战案例与组织变革"
+    date: 2026-03-31
+    score: 6.35
+    status: scanned
+    transcript: false
+    url: https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f
+  - podcast: The Joe Rogan Experience
+    episode: "#2476"
+    title: "#2476 - Shanna H. Swan"
+    date: 2026-03-31
+    score: 4.70
+    status: scanned
+    transcript: false
