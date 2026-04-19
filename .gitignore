@@ -17,3 +17,6 @@
 *.swp
 *.swo
 *~
+
+# Claude Code session logs (local-only, may contain sensitive info)
+notes/sessions/
