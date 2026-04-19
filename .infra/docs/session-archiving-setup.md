@@ -1,6 +1,6 @@
 # Claude Code 对话自动归档设置
 
-每次 Claude Code 会话结束时，自动生成 MD 文件到 Obsidian vault，包含用户输入、Claude 输出和摘要。
+每天的 Claude Code 对话（所有 session 合并）自动落成**一个** MD 文件进入 Obsidian vault，含 user 输入、Claude 文本输出和摘要。
 
 ## 架构
 
@@ -9,12 +9,16 @@ Claude Code 会话结束
   ↓ SessionEnd hook (~/.claude/settings.json)
 archive-session.sh
   ├─ 读 stdin: session_id / transcript_path / cwd
+  ├─ dedup: 如果当天 MD 已含此 session_id → 跳过
   ├─ jq 过滤 JSONL → 只保留 user/assistant 的 text 内容
   ├─ claude -p (Haiku) → 生成中文摘要
-  └─ 写 MD → ~/ClaudeCode/notes/sessions/YYYY-MM-DD-HH-MM-{cwd}-{session前8位}.md
+  └─ 追加到 → ~/ClaudeCode/notes/sessions/YYYY-MM-DD.md
+      （首次当天创建时写 YAML header + 标题；后续 session 作为 `##` 章节追加）
   ↓
 Obsidian 识别（vault = ~/ClaudeCode）
 ```
+
+每日一个文件，每个 session 是文件里的一个 `## HH:MM — {项目名}` 章节，包含摘要、完整对话、session 元数据。
 
 ## 前置条件
 
@@ -70,7 +74,7 @@ ls ~/ClaudeCode/notes/sessions/
 ```bash
 claude           # 随便聊两句
 /exit            # 退出
-ls ~/ClaudeCode/notes/sessions/  # 应该多一个文件
+cat ~/ClaudeCode/notes/sessions/$(date +%Y-%m-%d).md  # 应该看到新追加的章节
 ```
 
 **查看日志**：

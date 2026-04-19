@@ -1,42 +1,51 @@
 ---
 date: {YYYY-MM-DD}
-time: "{HH:MM}"
-session_id: {完整 session id}
-cwd: {工作目录绝对路径}
 type: session-log
 tags:
   - claude-code
   - session-log
-  - {cwd-basename}
 ---
 
-# {cwd-basename} — {YYYY-MM-DD HH:MM}
+# {YYYY-MM-DD} Claude Code 对话
 
-## 摘要
+## {HH:MM} — {cwd-basename} `{session_id前8位}`
+
+### 摘要
+
 {claude -p Haiku 生成的 3-5 条要点，中文，≤150 字}
 
-## 对话
+### 对话
 
-### USER
+**USER**:
 
 {用户第一轮输入}
 
-### ASSISTANT
+**ASSISTANT**:
 
-{Claude 第一轮文本响应}
+{Claude 第一轮文本响应（去掉 tool_use / thinking）}
 
-### USER
+**USER**:
 
 {用户第二轮输入}
 
-### ASSISTANT
+**ASSISTANT**:
 
 {Claude 第二轮文本响应}
+
+- session_id: `{完整 session id}`
+- cwd: `{工作目录}`
+- transcript: `{transcript 路径}`
+
+---
+
+## {HH:MM} — {下一个 session 的 cwd-basename} `{session_id前8位}`
+
+### 摘要
+
+...
+
+### 对话
 
 ...
 
 ---
-
-- **Session ID**: `{session_id}`
-- **工作目录**: `{cwd}`
-- **Transcript**: `{transcript_path}`

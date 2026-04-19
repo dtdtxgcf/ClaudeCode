@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # archive-session.sh
-# Claude Code SessionEnd hook: archive conversation to Obsidian vault as Markdown.
+# Claude Code SessionEnd hook: append conversation to a daily Markdown log.
 #
 # Input (stdin JSON): { "session_id", "transcript_path", "cwd", "hook_event_name" }
-# Output: writes MD to $CLAUDE_SESSIONS_DIR (default ~/ClaudeCode/notes/sessions/)
+# Output: appends to $CLAUDE_SESSIONS_DIR/YYYY-MM-DD.md (default ~/ClaudeCode/notes/sessions/)
 # Logs errors to ~/.claude/hooks/archive-session.log. Never blocks hook exit.
 
 set -u
@@ -13,9 +13,8 @@ SUMMARY_MODEL="${CLAUDE_SESSIONS_SUMMARY_MODEL:-claude-haiku-4-5}"
 LOG_DIR="$HOME/.claude/hooks"
 LOG_FILE="$LOG_DIR/archive-session.log"
 
-log() { echo "[$(date -Iseconds)] $*" >> "$LOG_FILE"; }
-
 mkdir -p "$LOG_DIR"
+log() { echo "[$(date -Iseconds)] $*" >> "$LOG_FILE"; }
 
 # Early exit paths — must not fail the hook
 [ "${CLAUDE_SESSIONS_DISABLE:-0}" = "1" ] && { log "disabled via env"; exit 0; }
@@ -35,15 +34,20 @@ mkdir -p "$SESSIONS_DIR"
 
 DATE="$(date +%Y-%m-%d)"
 TIME="$(date +%H:%M)"
-FILENAME_TIME="$(date +%H-%M)"
 CWD_BASE="$(basename "${CWD:-unknown}" | tr -c 'A-Za-z0-9._-' '-' | sed 's/-\+/-/g; s/^-//; s/-$//')"
 [ -z "$CWD_BASE" ] && CWD_BASE="unknown"
 SHORT_ID="$(echo "$SESSION_ID" | cut -c1-8)"
-OUT="$SESSIONS_DIR/${DATE}-${FILENAME_TIME}-${CWD_BASE}-${SHORT_ID}.md"
+OUT="$SESSIONS_DIR/${DATE}.md"
 
-# Extract human-readable conversation from JSONL.
-# Claude Code transcripts: each line is {type: "user"|"assistant"|..., message: {role, content: [{type, text|...}]}}
-# We only keep text parts; tool_use/tool_result skipped.
+# Dedup: if this session is already recorded in today's file, skip.
+# SessionEnd can fire multiple times if a session is resumed and closed again.
+if [ -f "$OUT" ] && grep -Fq "session_id: \`$SESSION_ID\`" "$OUT"; then
+  log "session $SESSION_ID already archived in $OUT, skipping"
+  exit 0
+fi
+
+# Extract user/assistant text from JSONL transcript. Skip tool_use/tool_result/thinking.
+# User messages: content is a plain string. Assistant messages: content is an array.
 CONVO="$(jq -r '
   select(.type == "user" or .type == "assistant")
   | . as $ev
@@ -54,7 +58,7 @@ CONVO="$(jq -r '
       ($c | tostring)
     end
   | select(length > 0)
-  | "### \($ev.type | ascii_upcase)\n\n\(.)\n"
+  | "**\($ev.type | ascii_upcase)**:\n\n\(.)\n"
 ' "$TRANSCRIPT" 2>/dev/null)"
 
 if [ -z "$CONVO" ]; then
@@ -85,24 +89,28 @@ if [ -z "$SUMMARY" ]; then
   log "summary failed for $SESSION_ID"
 fi
 
-# Render MD
-{
-  printf -- '---\n'
-  printf 'date: %s\n' "$DATE"
-  printf 'time: "%s"\n' "$TIME"
-  printf 'session_id: %s\n' "$SESSION_ID"
-  printf 'cwd: %s\n' "$CWD"
-  printf 'type: session-log\n'
-  printf 'tags:\n  - claude-code\n  - session-log\n  - %s\n' "$CWD_BASE"
-  printf -- '---\n\n'
-  printf '# %s — %s %s\n\n' "$CWD_BASE" "$DATE" "$TIME"
-  printf '## 摘要\n\n%s\n\n' "$SUMMARY"
-  printf '## 对话\n\n%s\n\n' "$CONVO"
-  printf -- '---\n\n'
-  printf -- '- **Session ID**: `%s`\n' "$SESSION_ID"
-  printf -- '- **工作目录**: `%s`\n' "$CWD"
-  printf -- '- **Transcript**: `%s`\n' "$TRANSCRIPT"
-} > "$OUT"
+# If daily file doesn't exist yet, write YAML header + title.
+if [ ! -f "$OUT" ]; then
+  {
+    printf -- '---\n'
+    printf 'date: %s\n' "$DATE"
+    printf 'type: session-log\n'
+    printf 'tags:\n  - claude-code\n  - session-log\n'
+    printf -- '---\n\n'
+    printf '# %s Claude Code 对话\n\n' "$DATE"
+  } > "$OUT"
+fi
 
-log "wrote $OUT"
+# Append this session's block.
+{
+  printf '## %s — %s `%s`\n\n' "$TIME" "$CWD_BASE" "$SHORT_ID"
+  printf '### 摘要\n\n%s\n\n' "$SUMMARY"
+  printf '### 对话\n\n%s\n' "$CONVO"
+  printf -- '- session_id: `%s`\n' "$SESSION_ID"
+  printf -- '- cwd: `%s`\n' "$CWD"
+  printf -- '- transcript: `%s`\n\n' "$TRANSCRIPT"
+  printf -- '---\n\n'
+} >> "$OUT"
+
+log "appended session $SHORT_ID to $OUT"
 exit 0
