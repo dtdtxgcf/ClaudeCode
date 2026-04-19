@@ -48,6 +48,13 @@ while IFS= read -r -d '' FILE; do
     */subagents/*) skipped=$((skipped + 1)); continue ;;
   esac
 
+  # Skip headless `claude -p` sub-sessions: real user sessions have >1 user message
+  U_COUNT="$(jq -s '[.[] | select(.type=="user")] | length' "$FILE" 2>/dev/null || echo 0)"
+  if [ "${U_COUNT:-0}" -le 1 ]; then
+    skipped=$((skipped + 1))
+    continue
+  fi
+
   # Extract session_id from filename (e.g. abc123.jsonl → abc123)
   BASENAME="$(basename "$FILE" .jsonl)"
   SESSION_ID="$BASENAME"
