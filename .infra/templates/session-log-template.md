@@ -1,20 +1,23 @@
 ---
+title: "{Haiku 生成的 10-18 字中文一句话摘要}"
 date: {YYYY-MM-DD}
-type: session-log
+type: claude-session
+topic: "{Haiku 生成的 2-6 字主题标签，如 OpenClaw/Inbox功能/对话归档}"
+cwd: "{工作目录}"
 tags:
-  - claude-code
-  - session-log
+  - Claude对话
+  - {topic}
 ---
 
-# {YYYY-MM-DD} Claude Code 对话
+# {YY-MM-DD}【Claude对话】【{topic}】{title}
 
-## {HH:MM} — {cwd-basename} `{session_id前8位}`
+> {YYYY-MM-DD}  {HH:MM}  `{cwd-basename}`
 
-### 摘要
+## 摘要
 
-{claude -p Haiku 生成的 3-5 条要点，中文，≤150 字}
+{Haiku 生成 100-150 字中文摘要：用户需求 + 实际做了什么 + 产出 + 遗留}
 
-### 对话
+## 对话
 
 **USER**:
 
@@ -32,20 +35,10 @@ tags:
 
 {Claude 第二轮文本响应}
 
+...
+
+---
+
 - session_id: `{完整 session id}`
 - cwd: `{工作目录}`
 - transcript: `{transcript 路径}`
-
----
-
-## {HH:MM} — {下一个 session 的 cwd-basename} `{session_id前8位}`
-
-### 摘要
-
-...
-
-### 对话
-
-...
-
----
